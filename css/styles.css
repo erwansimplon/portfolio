@@ -1,0 +1,719 @@
+div{
+  color: white;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -5px;
+  cursor: default;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+i{
+  font-size: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:focus{
+  outline: 0;
+}
+
+.menu >li >a::after{
+  visibility: 0;
+}
+
+.menu >li >a:hover::after{
+  visibility: 1;
+  content: '';
+  display: block;
+  height: 4px;
+  width: 50px;
+  background: #ed7263;
+  margin: 4px 0 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.menu >li >a:hover,
+.mail:hover,
+.lien-icon:hover,
+.realisation:hover,
+.adresse:hover{
+  color: #ed7263;
+}
+
+.realisation-titre:hover,
+.adresse-titre:hover,
+.mail-titre:hover,
+.icon-utiliser-titre:hover,
+#code:hover,
+#map:hover,
+#mail:hover{
+  color: white;
+}
+
+#github:hover,
+#gitlab:hover,
+#linkedin:hover{
+  color: #ed7263;
+}
+
+.maitrise-titre::after,
+.utiliser-titre::after,
+.vue-titre::after,
+.langage-apprentissage-titre::after,
+.presentation-titre::after,
+.projet::after{
+  content: '';
+  display: block;
+  height: 4px;
+  width: 50px;
+  background: #ed7263;
+  margin: 4px 0 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.realisation-titre,
+.adresse-titre,
+.mail-titre,
+.icon-utiliser-titre,
+#code,
+#map,
+#mail{
+  color: #ed7363;
+}
+
+#github,
+#gitlab,
+#linkedin{
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+#code,
+#map,
+#mail{
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.barre-nav{
+    position: fixed;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: 3;
+    background: grey;
+}
+
+.menu{
+    text-align: center;
+    padding-left: 0;
+}
+
+.menu >li{
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.menu >li:last-child{
+  margin-right: 0%;
+}
+
+.menu >li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 36px;
+}
+
+
+.parallax{
+  margin: 0;
+  padding: 0;
+  background: url(images/fond.png) no-repeat fixed #061924;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-top: -75px;
+}
+
+.image-fond{
+  position: fixed;
+  filter: brightness(35%);
+  -webkit-filter: brightness(35%);
+  -moz-filter: brightness(35%);
+  -o-filter: brightness(35%);
+  -ms-filter: brightness(35%);
+  height: auto;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.surcouche-parallax-partie-1{
+  opacity: 0.9;
+  background: grey;
+  height: auto;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+.surcouche-parallax-partie-2{
+  opacity: 0.9;
+  margin-top: 7%;
+  background: grey;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 640px;
+}
+
+.image-perso{
+  background: url(../images/image-perso.jpg) no-repeat;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.text-perso{
+  width: 38%;
+  position: relative;
+  display: inline-block;
+  top: -9px;
+  float: right;
+  right: 18.5%;
+}
+
+.nom:first-child{
+  margin-top: 150px;
+  padding-top: 70px;
+}
+
+.nom{
+  font-size: 150px;
+  text-align: center;
+}
+
+.maitrise,
+.utiliser,
+.vue,
+.langage-apprentissage{
+  text-align: center;
+  margin-top: 7%;
+}
+
+.conteneur-maitrise,
+.conteneur-utiliser,
+.conteneur-vue,
+.conteneur-langage-apprentissage{
+  display: inline-block;
+  position: relative;
+}
+
+.maitrise-titre,
+.utiliser-titre,
+.vue-titre,
+.langage-apprentissage-titre{
+  margin-bottom: 3%;
+  font-size: 35px;
+}
+
+.conteneur-maitrise,
+.conteneur-utiliser,
+.conteneur-vue{
+  width: 19%;
+  vertical-align: middle;
+  height: 131px;
+}
+
+.conteneur-langage-apprentissage{
+  width: 24%;
+}
+
+.text-maitrise,
+.text-utiliser,
+.text-vue,
+.text-langage-apprentissage{
+  font-size: 25px;
+  color: #ed7263;
+}
+
+.plus-conteneur{
+  display: inline-block;
+  position: relative;
+  width: auto;
+  top: -14px;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.image-projet{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: none;
+  width: 400px;
+  height: 400px;
+}
+
+.over-image{
+  opacity: 0;
+  position: relative;
+  background-color: rgba(237, 114, 99, 0);
+  width: 402px;
+  height: 402px;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+  transition: opacity 750ms, background-color 750ms;
+}
+
+.over-image:hover{
+  opacity: 1;
+  background-color: rgba(237, 114, 99, 1);
+  transition: opacity 750ms, background-color 750ms;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-20%, -50%);
+}
+
+.over-lien{
+  color: white;
+  padding: 10px;
+  background-color: gray;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+
+.miniature-projet {
+  width: 49%;
+  height: 442px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0%;
+}
+
+.miniature-projet:last-child{
+  float: right;
+}
+
+.icon-utiliser{
+  width: 25%;
+  display: inline-block;
+  position: relative;
+  height: 230px;
+  top: 10px;
+  vertical-align: middle;
+}
+
+.icon-utiliser-titre{
+  text-align: center;
+}
+
+.lien-icon{
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.reseaux-sociaux{
+  width: 32%;
+  top: 10px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  vertical-align: middle;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.contact{
+  width: 42%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  top: 10px;
+  vertical-align: middle;
+  height: 170px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contact-adresse,
+.contact-mail,
+.contact-realisation{
+  position: relative;
+  display: inline-block;
+  width: 33%;
+  vertical-align: 74%;
+  height: 150px;
+  border: none;
+}
+
+.contact-mail{
+  top: -42px;
+}
+
+.contact-realisation{
+  top: -24px;
+}
+
+.contact-adresse{
+  top: -1px;
+}
+
+.mail{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
+.adresse,
+.realisation{
+  font-size: 20px;
+}
+
+.presentation-titre{
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 75%;
+  float: right;
+  text-transform: uppercase;
+  height: auto;
+}
+
+.presentation{
+  width: 100%;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+}
+
+.presentation-perso{
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+
+.projet{
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  height: auto;
+}
+
+.presentation-projet-realiser{
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  height: 640px;
+}
+
+@media only screen and (max-width : 900px){
+
+  div{
+    margin-bottom: 0;
+  }
+
+  .barre-nav{
+    height: auto;
+    position: relative;
+    top: 59px;
+  }
+
+  .menu{
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu>li{
+    display: block;
+    width: 100%;
+    height: 110px;
+  }
+
+  .menu >li >a{
+    font-size: 57px;
+    line-height: 1.8;
+  }
+
+  .nom:first-child{
+    margin-top: 43.55px;
+  }
+
+  .nom{
+    font-size: 65px;
+  }
+
+  .surcouche-parallax-partie-1{
+    width: 100%;
+    display: block;
+  }
+
+  .presentation-titre{
+    width: 100%;
+    float: none;
+    font-size: 36px;
+  }
+
+  .text-perso{
+    width: 92%;
+    top: -9px;
+    float: none;
+    padding-left: 4%;
+    padding-right: 4%;
+    right: 0;
+  }
+
+  .image-perso{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    top: auto;
+    margin-top: 0px;
+    position: relative;
+    transform: translate(0%, 0%);
+  }
+
+  .maitrise-titre,
+  .utiliser-titre,
+  .vue-titre,
+  .langage-apprentissage-titre {
+    margin-bottom: 15%;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .conteneur-maitrise,
+  .conteneur-utiliser,
+  .conteneur-vue {
+    width: 100%;
+    height: 200px;
+  }
+
+  .conteneur-langage-apprentissage{
+    width: 100%;
+  }
+
+  .surcouche-parallax-partie-2{
+    width: 100%;
+    height: 950px;
+  }
+
+  .presentation-projet-realiser{
+    width: 100%;
+    height: 950px;
+  }
+
+  .projet{
+    width: 100%;
+    font-size: 36px;
+  }
+
+  .miniature-projet {
+    width: 100%;
+    height: 300px;
+    display: block;
+  }
+
+  .miniature-projet:last-child{
+    float: none;
+  }
+
+  .image-projet{
+    width: 300px;
+    height: 300px;
+  }
+
+  .over-image{
+    width: 302px;
+    height: 302px;
+  }
+
+  .center-text{
+    font-size: 16px;
+  }
+
+  .footer{
+    margin-top: 0px;
+  }
+
+  .icon-utiliser{
+    width: 100%;
+  }
+
+  .realisation-titre,
+  .adresse-titre,
+  .mail-titre,
+  .icon-utiliser-titre,
+  #code,
+  #map,
+  #mail {
+    font-size: 36px;
+  }
+
+  .lien-icon{
+    width: 100%;
+    display: block;
+  }
+
+  .contact{
+    width: 100%;
+    top: 34px;
+    display: block;
+    height: 170px;
+  }
+
+  .contact-realisation{
+    top: 0px;
+  }
+
+  .contact-adresse,
+  .contact-mail,
+  .contact-realisation {
+    margin-bottom: 100px;
+    vertical-align: 100%;
+    display: block;
+    width: 100%;
+   }
+
+   .contact-mail{
+     top: 0px;
+   }
+
+   .reseaux-sociaux{
+     width: 100%;
+     top: 500px;
+     display: block;
+     padding-bottom: 0;
+   }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1280px){
+
+  .conteneur-maitrise,
+  .conteneur-utiliser,
+  .conteneur-vue {
+    width: 33%;
+    margin-top: 6%;
+  }
+
+  .conteneur-maitrise:last-child,
+  .conteneur-utiliser:last-child,
+  .conteneur-vue:last-child {
+    margin-bottom: 6%;
+  }
+
+  .presentation-titre{
+    width: 51%;
+  }
+
+  .text-perso{
+    width: 50%;
+    right: 2.5%;
+  }
+
+  .icon-utiliser {
+    width: 49%;
+    top: 37.5px;
+  }
+
+  .lien-icon{
+    width: 100%;
+    display: block;
+  }
+
+  .contact{
+    width: 100%;
+  }
+
+  .contact-realisation {
+    top: -210px;
+  }
+
+  .contact-adresse, .contact-mail, .contact-realisation {
+    width: 49%;
+  }
+
+  .contact-adresse {
+    float: left;
+  }
+
+  .contact-mail{
+    top: -161px;
+    float: right;
+  }
+
+  .reseaux-sociaux{
+    width: 100%;
+    padding-top: 50px;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1900px){
+
+  .contact{
+    width: 74%;
+  }
+
+  .contact-adresse, .contact-mail, .contact-realisation {
+    width: 33%;
+  }
+
+  .contact-mail{
+    top: -43px;
+  }
+
+  .reseaux-sociaux{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .icon-utiliser{
+    top: 22px;
+  }
+}

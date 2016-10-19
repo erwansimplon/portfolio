@@ -1,0 +1,11 @@
+<?php
+include("fonction/structure-html.php");
+head();
+menu();
+titre();
+surcouche_1();
+connaissance();
+surcouche_2();
+footer();
+fermeture_body_html();
+?>
